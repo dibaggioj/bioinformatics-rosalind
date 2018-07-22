@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb84f2a3-21fc-458d-8b93-9d8537c6cc1e" name="Default" comment="" />
+    <list default="true" id="fb84f2a3-21fc-458d-8b93-9d8537c6cc1e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/textbook/data/ba1b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/textbook/src/ba1b.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textbook/src/ba1a.py" beforeDir="false" afterPath="$PROJECT_DIR$/textbook/src/ba1a.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,35 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ba1a.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ba1b.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/textbook/src/ba1b.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ba1a.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/textbook/src/ba1a.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-              <folding>
-                <element signature="e#1527#1537#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bio_util.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stronghold/src/lib/bio_util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ex_11__finding_a_shared_motif.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stronghold/src/ex_11__finding_a_shared_motif.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="64" />
-              <folding>
-                <element signature="e#109#119#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1065">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
         </entry>
@@ -58,12 +49,17 @@
       <find>argv</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/algorithms/data/ba1a.txt" />
         <option value="$PROJECT_DIR$/textbook/data/ba1a.txt" />
+        <option value="$PROJECT_DIR$/textbook/data/ba1b.txt" />
         <option value="$PROJECT_DIR$/textbook/src/ba1a.py" />
+        <option value="$PROJECT_DIR$/textbook/src/ba1b.py" />
       </list>
     </option>
   </component>
@@ -82,6 +78,7 @@
     <option name="width" value="1553" />
     <option name="height" value="1026" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -97,24 +94,6 @@
             <path>
               <item name="bioinformatics-rosalind" type="b2602c69:ProjectViewProjectNode" />
               <item name="bioinformatics-rosalind" type="462c0819:PsiDirectoryNode" />
-              <item name="stronghold" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bioinformatics-rosalind" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bioinformatics-rosalind" type="462c0819:PsiDirectoryNode" />
-              <item name="stronghold" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bioinformatics-rosalind" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bioinformatics-rosalind" type="462c0819:PsiDirectoryNode" />
-              <item name="stronghold" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bioinformatics-rosalind" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bioinformatics-rosalind" type="462c0819:PsiDirectoryNode" />
               <item name="textbook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -122,6 +101,18 @@
               <item name="bioinformatics-rosalind" type="462c0819:PsiDirectoryNode" />
               <item name="textbook" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bioinformatics-rosalind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bioinformatics-rosalind" type="462c0819:PsiDirectoryNode" />
+              <item name="textbook" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bioinformatics-rosalind" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bioinformatics-rosalind" type="462c0819:PsiDirectoryNode" />
+              <item name="textbook" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -135,6 +126,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/python_virtual_envs/sensor_data_service_env/bin/python3.6" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -142,11 +134,11 @@
       <recent name="$PROJECT_DIR$/stronghold" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/textbook/src" />
       <recent name="$PROJECT_DIR$/textbook" />
       <recent name="$PROJECT_DIR$/armory" />
       <recent name="$PROJECT_DIR$/python" />
       <recent name="$PROJECT_DIR$/algorithms" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -182,7 +174,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.27731094" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.227302" />
@@ -257,17 +249,46 @@
     <entry file="file://$PROJECT_DIR$/stronghold/src/lib/bio_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/textbook/data/rosalind_ba1a.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textbook/data/ba1b.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textbook/output/rosalind_ba1a.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textbook/output/ba1b.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/textbook/src/ba1a.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-          <folding>
-            <element signature="e#1527#1537#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1065">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textbook/src/ba1b.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
         </state>
       </provider>
     </entry>
