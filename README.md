@@ -1,12 +1,16 @@
 # Bioinformatics with Rosalind
 
-A collection of completed bioinformatics exercises posted by the [Rosalind](http://rosalind.info/about/) project and "Bioinformatics Algorithms: an Active Learning Approach" textbook by Phillip Compeau & Pavel Pevzner
+A collection of completed bioinformatics exercises from the [Rosalind](http://rosalind.info/about/) project and "Bioinformatics Algorithms: an Active Learning Approach" textbook by Phillip Compeau and Pavel Pevzner
 
-## Getting Started
+## Prerequisites
 
-Install the latest version of Python 3 or use the included virtualenv.
+Latest versions of Python 3 and pip
 
-### Running
+### Getting Started
+
+Run `pip install` to install requirements from the requirements.txt file
+
+## Running
 
 Solutions can be executed like
 ```
