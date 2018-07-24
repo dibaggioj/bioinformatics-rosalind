@@ -23,41 +23,76 @@ import fileinput
 argv = list(sys.argv)
 
 
-def build_adjacency_lists(edge_map, k=3):
-    adjancency_lists = []
-    for label, dna
+def build_adjacency_matrix(edge_map, k=3):
+    """
+    :param edge_map: map of ID to DNA string
+    :type edge_map: dict
+    :param k: size of overlap
+    :type k: int
+    :return: adjacency matrix, a list of 2-element lists, where each element is a tuple of node label and DNA string
+    :rtype: [[(list, str)]]
+    """
+    adjancency_matrix = []
+    prefix_map = dict()
+
+    for label, dna in edge_map.items():
+        prefix = dna[:k]
+        if prefix in prefix_map:
+            prefix_map[prefix].append((label, dna))
+        else:
+            prefix_map[prefix] = [(label, dna)]
+
+    for label, dna in edge_map.items():
+        suffix = dna[-k:]
+        if suffix not in prefix_map:
+            continue
+        matches = prefix_map[suffix]
+        for match in matches:
+            if match[1] == dna:  # Criteria to prevent directed loops (unpack DNA string from tuple (2nd element))
+                continue
+            adjancency_matrix.append([(label, dna), match])
+
+    return adjancency_matrix
 
 
-edge_map = dict()
-
-
-def init_edge_map():
+def init_edge_map(filename):
+    """
+    :param filename: file name
+    :type filename: str
+    :return: edge_map: map of ID to DNA string
+    :rtype: dict
+    """
+    edge_map = dict()
     dna_id = None
-    for line in fileinput.input(argv[1]):
-        if line.startswith('>'):
-            dna_id = line.replace('>', '').replace('\n', '')
-        elif len(line) > 0:
-            dna_string = line.replace('\n', '')
+    dna_string_builder = []
+
+    for line in fileinput.input(filename):
+        if line.startswith(">"):
             if dna_id is not None:
-                edge_map[dna_id] = dna_string
-                dna_id = None
+                edge_map[dna_id] = "".join(dna_string_builder)
+            dna_id = line.replace(">", "").replace("\n", "")
+            dna_string_builder = []
+        elif len(line) > 0:
+            dna_string_builder.extend(list(line.replace("\n", "")))    # DNA string can span multiple lines
+
+    if dna_id is not None and len(dna_string_builder) > 0:
+        edge_map[dna_id] = "".join(dna_string_builder)
+
+    return edge_map
 
 
-init_edge_map()
+k = 3
+edge_map = init_edge_map(argv[1])
+adjacency_matrix = build_adjacency_matrix(edge_map, 3)
 
-print(edge_map)
-# output_freq_words = frequent_words(input_text, input_k)
-# most_freq_kmer_list = output_freq_words[0]
-# greatest_freq = output_freq_words[1]
-#
-# output_most_freq_kmers = " ".join(most_freq_kmer_list)
-#
-# print("The following most frequent {}-mers in \"{}\" each have a frequency of {}:\n{}".format(input_k,
-#                                                                                             input_text,
-#                                                                                             str(greatest_freq),
-#                                                                                             output_most_freq_kmers))
-#
-# output_file = open(argv[2], 'w+')
-# output_file.write(output_most_freq_kmers)
-# output_file.close()
+# For output, separate out labels
+output_adjacency_lists = []
+for adjacency_list in adjacency_matrix:
+    labels, dna_strings = map(list, zip(*adjacency_list))
+    output_adjacency_lists.append(labels)
+
+output_file = open(argv[2], 'w+')
+for output_adjacency_list in output_adjacency_lists:
+    output_file.write(" ".join(output_adjacency_list) + '\n')
+output_file.close()
 
