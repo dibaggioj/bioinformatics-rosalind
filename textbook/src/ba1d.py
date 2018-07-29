@@ -3,7 +3,7 @@
 """
 Created by John DiBaggio on 2018-07-28
 
-Find All Occurrences of a Pattern in a String solved by 831
+Find All Occurrences of a Pattern in a String
 
 In this problem, we ask a simple question: how many times can one string occur as a substring of another? Recall from “Find the Most Frequent Words in a String” that different occurrences of a substring can overlap with each other. For example, ATA occurs three times in CGATATATCCATAG.
 
