@@ -30,7 +30,7 @@ __author__ = 'johndibaggio'
 import sys
 import fileinput
 
-COMPLEMENTARY_NUCLEOTIDE_MAP = {'A':'T','T':'A','C':'G','G':'C'}
+COMPLEMENTARY_NUCLEOTIDE_MAP = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
 
 
 def complement(dna):
