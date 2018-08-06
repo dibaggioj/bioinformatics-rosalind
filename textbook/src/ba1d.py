@@ -46,9 +46,9 @@ for line in fileinput.input(argv[1]):
 def find_occurrences(genome, pattern):
     """
     Find the indices of all occurrences of pattern in genome
-    :param genome: DNA substring
+    :param genome: DNA string
     :type genome: str
-    :param pattern: DNA string
+    :param pattern: DNA substring
     :type pattern: str
     :return: list of indices of occurrences of pattern in genome
     :rtype: list[int]
