@@ -31,7 +31,6 @@ __author__ = 'johndibaggio'
 
 import sys
 import fileinput
-from collections import deque
 
 
 argv = list(sys.argv)
@@ -69,8 +68,6 @@ def hamming_distance(p, q):
 
 
 output_hamming_distance = hamming_distance(input_dna_string_1, input_dna_string_2)
-
-print(output_hamming_distance)
 
 output_string = str(output_hamming_distance)
 
