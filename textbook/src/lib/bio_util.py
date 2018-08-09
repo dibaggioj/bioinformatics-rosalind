@@ -10,6 +10,7 @@ T = 'T'
 
 NUCLEOTIDES = [A, C, G, T]
 
+
 class BioUtil:
     __metaclass__ = ABCMeta
 
@@ -84,7 +85,6 @@ class BioUtil:
         neighborhood = set()
         suffix_neighbors = BioUtil.neighbors(BioUtil.suffix(pattern), d)
         for text in suffix_neighbors:
-            print(pattern + " vs " + text)
             if BioUtil.hamming_distance(BioUtil.suffix(pattern), text) < d:
                 for n in NUCLEOTIDES:
                     neighborhood.add(n + text)
