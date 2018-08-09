@@ -23,14 +23,18 @@ Sample Output
 6 7 26 27 78
 
 Execute like:
-python src/ba1h.py data/ba1h.txt output/ba1h.txt
+python3 src/ba1h.py data/ba1h.txt output/ba1h.txt
 
 """
 __author__ = 'johndibaggio'
 
 import sys
 import fileinput
-from lib.bio_util import BioUtil
+
+if __name__ == '__main__':
+    from lib.bio_util import BioUtil
+else:
+    from .lib.bio_util import BioUtil
 
 
 argv = list(sys.argv)
