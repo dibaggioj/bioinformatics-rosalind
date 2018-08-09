@@ -23,12 +23,17 @@ Given: A string Text as well as integers k and d, where k ≤ 12 and d ≤ 3
 
 Return: All most frequent k-mers with up to d mismatches in Text.
 
-Sample Dataset
+Sample Dataset:
 ACGTTGCATGTCGCATGATGCATGAGAGCT
 4 1
-
-Sample Output
+Sample Output:
 GATG ATGC ATGT
+
+Sample Dataset:
+CACAGTAGGCGCCGGCACACACAGCCCCGGGCCCCGGGCCGCCCCGGGCCGGCGGCCGCCGGCGCCGGCACACCGGCACAGCCGTACCGGCACAGTAGTACCGGCCGGCCGGCACACCGGCACACCGGGTACACACCGGGGCGCACACACAGGCGGGCGCCGGGCCCCGGGCCGTACCGGGCCGCCGGCGGCCCACAGGCGCCGGCACAGTACCGGCACACACAGTAGCCCACACACAGGCGGGCGGTAGCCGGCGCACACACACACAGTAGGCGCACAGCCGCCCACACACACCGGCCGGCCGGCACAGGCGGGCGGGCGCACACACACCGGCACAGTAGTAGGCGGCCGGCGCACAGCC
+10 2
+Sample Output:
+GCACACAGAC GCGCACACAC
 
 Execute like:
 python3 src/ba1i.py data/ba1i.txt output/ba1i.txt
@@ -87,8 +92,6 @@ def find_frequent_words_with_mismatches(text, k, d):
 
 
 frequent_words = find_frequent_words_with_mismatches(input_text, input_k, input_mismatches)
-print(frequent_words)
-
 
 output_string = " ".join(str(i) for i in frequent_words)
 
