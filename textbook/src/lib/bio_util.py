@@ -23,28 +23,28 @@ class BioUtil:
     def complement(dna_string):
         buffer = ""
         for nb in dna_string:
-            if nb == 'A':
-                buffer += 'T'
-            elif nb == 'T':
-                buffer += 'A'
-            elif nb == 'G':
-                buffer += 'C'
-            elif nb == 'C':
-                buffer += 'G'
+            if nb == A:
+                buffer += T
+            elif nb == T:
+                buffer += A
+            elif nb == G:
+                buffer += C
+            elif nb == C:
+                buffer += G
         return buffer
 
     @staticmethod
     def reverse_complement(dna_string):
         buffer = ""
         for nb in dna_string[::-1]:
-            if nb == 'A':
-                buffer += 'T'
-            elif nb == 'T':
-                buffer += 'A'
-            elif nb == 'G':
-                buffer += 'C'
-            elif nb == 'C':
-                buffer += 'G'
+            if nb == A:
+                buffer += T
+            elif nb == T:
+                buffer += A
+            elif nb == G:
+                buffer += C
+            elif nb == C:
+                buffer += G
         return buffer
 
     @staticmethod
