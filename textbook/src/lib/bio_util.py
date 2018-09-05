@@ -106,6 +106,15 @@ class BioUtil:
 
     @staticmethod
     def neighbors(pattern, d):
+        """
+        Generate the d-neighborhood of pattern
+        :param pattern: DNA text
+        :type pattern: str
+        :param d: maximum number of mismatches
+        :type d: int
+        :return: set of all k-mers whose Hamming distance from Pattern does not exceed d
+        :rtype: set
+        """
         if d == 0:
             return [pattern]
         if len(pattern) == 1:
