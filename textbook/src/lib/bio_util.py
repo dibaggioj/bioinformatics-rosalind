@@ -166,6 +166,20 @@ class BioUtil:
                 indices.append(i)
         return indices
 
+    @staticmethod
+    def compute_frequency_array(text, k):
+        length = 4 ** k
+        frequency_array = [0] * length
+        buffer = text[0:k]
+        text = text[k:]
+        index = BioUtil.pattern_to_number(buffer)
+        frequency_array[index] += 1
+        for c in text:
+            buffer = buffer[1:k] + c
+            index = BioUtil.pattern_to_number(buffer)
+            frequency_array[index] += 1
+        return frequency_array
+
 
 # BioUtil.register(tuple)
 #

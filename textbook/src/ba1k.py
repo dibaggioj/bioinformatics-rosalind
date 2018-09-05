@@ -60,26 +60,13 @@ for line in fileinput.input(argv[1]):
             input_text += line.replace('\n', '')
 
 
-def compute_frequency_array(text, k):
-    length = 4 ** k
-    frequency_array = [0] * length
-    buffer = text[0:k]
-    text = text[k:]
-    index = BioUtil.pattern_to_number(buffer)
-    frequency_array[index] += 1
-    for c in text:
-        buffer = buffer[1:k] + c
-        index = BioUtil.pattern_to_number(buffer)
-        frequency_array[index] += 1
-    return frequency_array
+freq_array = BioUtil.compute_frequency_array(input_text, input_k)
 
-
-freq_array = compute_frequency_array(input_text, input_k)
-print(freq_array)
 output_string = " ".join(str(i) for i in freq_array)
-kmers_string = " ".join(BioUtil.number_to_pattern(i, input_k) for i in range(0, len(freq_array)))
 
-print("The frequency array of {}-mers in \"{}\" is:\n{}\n{}".format(input_k, input_text, output_string, kmers_string))
+kmers_string = "\n".join(BioUtil.number_to_pattern(i, input_k) + ": " + str(freq_array[i]) for i in range(0, len(freq_array)))
+
+print("The frequency array of {}-mers in \"{}\" is:\n{}".format(input_k, input_text, kmers_string))
 
 output_file = open(argv[2], "w+")
 output_file.write(output_string)
